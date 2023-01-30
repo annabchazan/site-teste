@@ -1,4 +1,4 @@
-// Menu responsivo
+
 const btnMobile = document.getElementById('btn-mobile')
 
 function toggleMenu() {
@@ -7,9 +7,12 @@ function toggleMenu() {
 }
 
 btnMobile.addEventListener('click', toggleMenu)
-// Fim do Menu
 
-// Carrossel
+
+
+
+
+
 let slideIndex = 1
 showSlides(slideIndex)
 
@@ -40,9 +43,11 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = 'block'
   dots[slideIndex - 1].className += ' active'
 }
-// Fim do carrossel
 
-// Carrossel Lançamentos
+
+
+
+
 let cardIndex = 1
 cardSlide(cardIndex)
 
@@ -73,9 +78,12 @@ function cardSlide(n) {
   slides[cardIndex - 1].style.display = 'block'
   cardSlides[cardIndex - 1].className += ' active'
 }
-// Fim Lançamentos
 
-// Carrossel Destaques
+
+
+
+
+
 let destaqueIndex = 1
 destaqueSlides(destaqueIndex)
 
@@ -105,9 +113,11 @@ function destaqueSlides(n) {
   slides[destaqueIndex - 1].style.display = 'block'
   dots[destaqueIndex - 1].className += ' active'
 }
-// Fim Destaques
 
-// Carrossel Outlet
+
+
+
+
 let outIndex = 1
 outSlide(outIndex)
 
@@ -138,9 +148,12 @@ function outSlide(n) {
   oslides[outIndex - 1].style.display = 'block'
   outSlides[outIndex - 1].className += ' active'
 }
-// Fim Outlet
 
-//Depoimentos
+
+
+
+
+
 let depoIndex = 1
 depoSlide(depoIndex)
 
@@ -167,4 +180,3 @@ function depoSlide(n) {
   dslides[depoIndex - 1].style.display = 'block'
   depoSlide[depoIndex - 1].className += ' active'
 }
-//Fim de 
