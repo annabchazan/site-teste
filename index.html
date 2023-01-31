@@ -17,7 +17,7 @@
     <header class="menu">
       <a id="logo"  href="#">LOGO</a>
       <nav id="nav">
-        <button id="btn-mobile"><img src=".\img\icons\menu.png"></button>
+        <button id="button"><img src=".\img\icons\menu.png"></button>
         <ul id="itens">
           <li><a href="#">NEWS</a></li>
           <li><a href="#">CINTAS</a></li>
@@ -282,7 +282,7 @@
             </div>
           </div>
         </div>
-
+        <div id="espacamento"></div>
         <a class="todos" href="#">Ver todos</a>
       </div>
     </section>
@@ -295,23 +295,23 @@
         <div class="pagamento">
           <img src="img/icons/frete.png" />
           <p><span>FRETE GRÁTIS</span> A PARTIR DE</p>
-          <p>R$ 199(SUDESTE) E r$ 299 (BRASIL)</p>
+          <p>R$ 199(SUDESTE) E r$ 299 (BRASIL)</p><br>
         </div>
         <div class="pagamento">
           <img src="img/icons/boleto.png" />
           <p><span>10% DE DESCONTO</span>NO</p>
-          <p>BOLETO BANCÁRIO / DEPÓSITO</p>
+          <p>BOLETO BANCÁRIO / DEPÓSITO</p><br>
         </div>
 
         <div class="pagamento">
           <img src="img/icons/cartao.png" />
           <p><span>ATÉ 10X SEM JUROS</span></p>
-          <p>NOS CARTÕES DE CRÉDITO</p>
+          <p>NOS CARTÕES DE CRÉDITO</p><br>
         </div>
         <div class="pagamento">
           <img src="img/icons/cartao2.png" />
           <p>PAGAMENTO COM ATÉ</p>
-          <p><span>2 CARTÕES</span></p>
+          <p><span>2 CARTÕES</span></p><br>
         </div>
       </div>
     </section>
@@ -524,6 +524,7 @@
           </div>
         </div>
         </div>
+        <div id="espacamento"></div>
         <a class="todos" href="#">Ver todos</a>
       </div>
     </section>
@@ -563,9 +564,9 @@
       <div class="marc-lancamento">
         <div class="prox" style="text-align: right; padding: 5px">
           <a class="l-prev" onclick="plusOut(-1)" style="color: #5a5a5a ;">❮</a>
-          <span class="omarc" onclick="currentOut(1)"></span>
-          <span class="omarc" onclick="currentOut(2)"></span>
-          <span class="omarc" onclick="currentOut(3)"></span>
+          <span class="outlet-marc" onclick="currentOut(1)"></span>
+          <span class="outlet-marc" onclick="currentOut(2)"></span>
+          <span class="outlet-marc" onclick="currentOut(3)"></span>
           <a class="l-next" onclick="plusOut(1)" style="color: #5a5a5a ;">❯</a>
         </div>
 
@@ -762,6 +763,8 @@
               </div>
             </div>
         </div>
+        </div>
+        <div id="espacamento"></div>
         <a class="todos" href="#">Ver todos</a>
       </div>
     </section>
@@ -777,7 +780,7 @@
       <p><span>O que os nossos clientes estão dizendo</span></p>
         <div class="marcador-depoimentos">
 
-          <div class="myDepoimentos fade">
+          <div class="depoimento1 fade">
             <div class="slide-depoimentos">
               <div class="card-depoimentos">
                 <div class="quem">
@@ -820,7 +823,7 @@
               </div>
             </div>
           </div>
-          <div class="myDepoimentos fade">
+          <div class="depoimento1 fade">
             <div class="slide-depoimentos">
               <div class="card-depoimentos">
                 <div class="quem">
@@ -863,7 +866,7 @@
               </div>
             </div>
           </div>      
-              <div class="myDepoimentos fade">
+              <div class="depoimento1 fade">
             <div class="slide-depoimentos">
               <div class="card-depoimentos">
                 <div class="quem">
@@ -906,7 +909,7 @@
               </div>
             </div>
           </div>      
-              <div class="myDepoimentos fade">
+              <div class="depoimento1 fade">
             <div class="slide-depoimentos">
               <div class="card-depoimentos">
                 <div class="quem">
@@ -949,7 +952,7 @@
               </div>
             </div>
           </div>         
-           <div class="myDepoimentos fade">
+           <div class="depoimento1 fade">
             <div class="slide-depoimentos">
               <div class="card-depoimentos">
                 <div class="quem">
@@ -1010,7 +1013,7 @@
     <!-- Footer -->
     <footer>
     <section class="fixa">
-      <div class="logo-inf">Logo</div>
+      <div class="logo-inf">Logo</div><br>
       <div class="texto-inf">
         <p>Cadastre o seu email e <b>ganhe <br> 10% de desconto</b> na sua primeira compra</p>
       </div>
@@ -1025,60 +1028,66 @@
 
     <section class="mini-page">
         <div class="mini-banner">
-          <img src=".\img\5.jpeg" style="min-width: calc(60% - 1em);"> 
-          <div id="grid2">
-            <div><img src=".\img\banner_wpp.png"  ></div>
-            <div class="texto-grid2">
-            <p><span class="titulo-grid2">Alguma dúvida?</span></p><br><br>
-            <h1>Entre em contato pelo nosso</h1>
-            <h1 style="font-weight: bold; margin-top: 3px;"> Whatsapp (22) 99898-9898</h1>
-          </div>
+          <img src="img/5.jpeg" style="min-width: calc(60% - 1em);"> 
+            <div id="grid2">
+              <div class="tamanho"><img src="img/banner_wpp.png">
+              </div>
+                <div class="texto-grid2">
+                  <p><span class="titulo-grid2">Alguma dúvida?</span></p><br><br>
+                  <h1>Entre em contato pelo nosso</h1>
+                  <h1 style="font-weight: bold; margin-top: 3px;"> Whatsapp (22) 99898-9898</h1>
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="redes">
-          <img src=".\img\icons\face.png">
-          <img src=".\img\icons\inst.png">
-          <img src=".\img\icons\yt.png">
-        </div>
+            <div class="redes">
+              <img src="img/icons/face.png">
+              <img src="img/icons/inst.png">
+              <img src="img/icons/yt.png">
+            </div>
+      
       <div class="contato">
         <div class="">
           <ul><b>Institucional</b>
-            <li>Quem somos</li>
+            <li style="padding-top: 10px;">Quem somos</li>
             <li>Loja física</li>
             <li>Central de ajuda</li>
             <li>Contato</li>
-            <li>Procon-RJ</li>
+            <li>Procon-RJ</li><br><br>
           </ul>
         </div>
+        
         <div class="">
           <ul><b>Contato</b>
-            <li>Segunda a sexta de 7 as 17h</li>
+            <li style="padding-top: 10px;">Segunda a sexta de 7 as 17h</li>
             <li>(22)999999999</li>
             <li>(22)999999999</li>
             <li>Contato@teste</li>
-            <li>Procon-RJ</li>
+            <li>Procon-RJ</li><br><br>
           </ul>
         </div>
+
         <div class="cont-img">
           <ul>
           <li><b>Formas de pagamento</b></li>
-          <li><img src=".\img\cartoes.png"></li>
+          <li style="padding-top: 10px;"><img src="img/cartoes.png"  ></li><br><br>
           </ul>
         </div>
         <div class="cont-img">
           <ul>
           <li><b>Forma de entrega</b></li>
-          <li><img src=".\img\correios.png"></li>
+          <li style="padding-top: 25px;"><img src="img/correios.png"  ></li><br><br>
           </ul>
         </div>
         <div class="cont-img">
           <ul>
          <li><b>Segurança e qualidade</b></li>
-          <li><img src=".\img\seg.png"></li>
+          <li style="padding-top: 20px;"><img src="img/seg.png"></li><br><br>
         </ul>
         </div>
       </div>
    </section>
+
+
 
    <section id="informacoes">
       <hr><hr>
@@ -1092,6 +1101,9 @@
         </div>
    </section>
    </footer>
+   
+
+
     <!-- Fim do Footer -->
     
     <script src="./js/script.js"></script>
