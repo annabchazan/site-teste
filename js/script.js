@@ -1,5 +1,5 @@
 
-const btnMobile = document.getElementById('btn-mobile')
+const btnMobile = document.getElementById('button')
 
 function toggleMenu() {
   const nav = document.getElementById('nav')
@@ -132,7 +132,7 @@ function currentOut(n) {
 function outSlide(n) {
   let i
   let oslides = document.getElementsByClassName('myOutlet')
-  let outSlides = document.getElementsByClassName('omarc')
+  let outSlides = document.getElementsByClassName('outlet-marc')
   if (n > oslides.length) {
     outIndex = 1
   }
@@ -163,7 +163,7 @@ function currentDepo(n) {
 
 function depoSlide(n) {
   let i
-  let dslides = document.getElementsByClassName('myDepoimentos')
+  let dslides = document.getElementsByClassName('depoimento1')
   let depoSlide = document.getElementsByClassName('md')
   if (n > dslides.length) {
     depoIndex = 1
