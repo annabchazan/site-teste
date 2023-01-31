@@ -41,10 +41,10 @@
     padding: 0.2em;
     line-height: 0.5em;
   }
-  #btn-mobile img{
+  #button img{
     background-color: white;
   }
-  #btn-mobile {
+  #button {
     display: none;
     border: none;
     background-color: white;
@@ -232,7 +232,7 @@
   
   .l-marcador,
   .dmarc,
-  .omarc {
+  .outlet-marc {
     cursor: pointer;
     height: 10px;
     width: 10px;
@@ -248,7 +248,7 @@
   .active,
   .l-marcador:hover,
   .dmarc:hover,
-  .omarc:hover {
+  .outlet-marc:hover {
     background-color: #5a5a5a;
   }
   
@@ -357,6 +357,10 @@
   }
   .todos {
     font-size: 14px;
+   
+  }
+  #espacamento{
+    padding-bottom: 40px;
   }
   .card-texto p {
     color: #5a5a5a;
@@ -449,6 +453,7 @@
     height: 52px;
     padding-bottom: 1.6em;
   }
+  
    
   
   .banner img{
@@ -592,6 +597,8 @@
     display: flex;
     justify-content: space-around;
     gap: 0.5em;
+    align-items: center;
+    
   }
   .contato ul {
     line-height: 1.5em;
@@ -659,11 +666,16 @@
     color: #5a5a5a;
     font-size: 11px;
   }
+  .cont-img img {
+    display: block;
+   
+    width: 70%;
+  }
 
 
   /* Responsividade*/
   @media (max-width: 850px) {
-    #btn-mobile {
+    #button {
       display: block;
       position: absolute;
       z-index: 100000;
@@ -714,12 +726,24 @@
     .titulo-grid2 {
       font-size: 27px;
     }
+    .texto-grid {
+      font-size: 11px;
+      margin-left: 8%;
+    }
+    .titulo-grid {
+      font-size: 27px;
+    }
+    .btn-grid {
+      font-size: 11px;
+    }
    
   }
+  
+
   @media only screen and (max-width: 800px) {
     .texto-grid2 {
       font-size: 11px;
-      margin-left: 20%;
+      margin-left: 5%;
     }
     .texto-grid2 h1{
       margin-left: 10%;
@@ -728,7 +752,57 @@
     .titulo-grid2 {
       font-size: 27px;
     }
-   
+    .grid-container {
+      display: block;
+      text-align: center;
+    }
+    .grid-card01 {
+      padding-bottom: 1em;
+      width: 430px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grid-card02 {
+      padding-bottom: 1em;
+      width: 465px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .grid-card01 p,
+    .grid-card01 button {
+      text-align: left;
+    }
+    .grid-card02 p,
+    .grid-card02 button {
+      text-align: left;
+    }
+    .texto-grid {
+      display: block;
+      text-align: left;
+      margin-left: 14%;
+    }
+    .grid-card01 .texto-grid {
+      display: block;
+      text-align: left;
+      margin-left: 7%;
+    }
+    
+    .tamanho img{
+      width: 465px;
+      padding-left: 0;
+    }
+    #grid img {
+      max-width: 90%;
+    }
+ 
+    .texto-grid {
+      display: block;
+      text-align: left;
+      margin-left: 21%;
+    }
+   .espacamento{
+    padding-bottom: 10px;
+   }
   }
   
   @media only screen and (max-width: 300px) {
@@ -737,6 +811,7 @@
     .text {
       font-size: 11px;
     }
+    
   }
   
   @media (max-width: 767px) {
@@ -744,8 +819,7 @@
       height: 330px;
       width: 100%;
     }
-  }
-  @media only screen and (max-width: 300px) {
+ 
     .l-prev,
     .l-next,
     .dnext,
@@ -756,14 +830,67 @@
       font-size: 11px;
     }
   }
-  
+
   @media only screen and (max-width: 700px) {
+    .container-entrega {
+      display: block;
+    }
+ 
+    .banner,
+    .banner img {
+      max-height: 70%;
+      padding-bottom: 0;
+    }
+  
+    .marc-depoimentos {
+      display: none;
+    }
+    .slide-depoimentos {
+      display: block;
+      padding: 0;
+    }
+    .card-depoimentos {
+      margin: auto;
+      width: 80%;
+      margin-top: 2em;
+      margin-bottom: 2em;
+    }
+ 
+    .fixa {
+      display: block;
+      line-height: 1.5em;
+      padding-left: 12%;
+    }
+    .mini-page {
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .mini-banner,
+    .contato {
+      display: block;
+    }
+    .mini-banner img {
+     margin: 0 auto;
+    }
+    .contato {
+      text-align: center;
+      
+    }
+  
+    .cont-img img {
+      display: block;
+     margin: auto;
+      align-items: center;
+      width: 20%;
+    }
     #lancamentos,
     #destaques,
     #outlet {
       max-width: 60em;
       margin: auto;
       padding-left: 18%;
+      
     }
     #lancamentos h2,
     #destaques h2,
@@ -795,118 +922,18 @@
     .bottom-center {
       margin-left: 33%;
     }
-  }
-  @media only screen and (max-width: 800px) {
-    .grid-container {
-      display: block;
-      text-align: center;
-    }
-    .grid-card01 {
-      padding-bottom: 1em;
-      width: 430px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .grid-card01 p,
-    .grid-card01 button {
-      text-align: left;
-    }
-    .grid-card02 p,
-    .grid-card02 button {
-      text-align: left;
-    }
-    .texto-grid {
-      display: block;
-      text-align: left;
-      margin-left: 14%;
-    }
-    .grid-card01 .texto-grid {
-      display: block;
-      text-align: left;
-      margin-left: 7%;
-    }
-  
-    #grid img {
-      max-width: 90%;
-    }
-  }
-  
-  @media only screen and (min-width: 650px) and (max-width: 800px) {
-    .texto-grid {
-      display: block;
-      text-align: left;
-      margin-left: 21%;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .texto-grid {
+    .texto-grid2 {
       font-size: 11px;
-      margin-left: 8%;
+      margin-left: 22%;
     }
-    .titulo-grid {
+    .texto-grid2 h1{
+      margin-left: 10%;
+      font-size: 9px;
+    }
+    .titulo-grid2 {
       font-size: 27px;
     }
-    .btn-grid {
-      font-size: 11px;
-    }
-  }
-  @media only screen and (max-width: 700px) {
-    .container-entrega {
-      display: block;
-    }
-  }
-  @media only screen and (max-width: 700px) {
-    .banner,
-    .banner img {
-      max-height: 70%;
-      padding-bottom: 0;
-    }
-  }
-
-  @media only screen and (max-width: 700px) {
-    .marc-depoimentos {
-      display: none;
-    }
-    .slide-depoimentos {
-      display: block;
-      padding: 0;
-    }
-    .card-depoimentos {
-      margin: auto;
-      width: 100%;
-      margin-top: 2em;
-      margin-bottom: 2em;
-    }
-  }
-  @media only screen and (max-width: 700px) {
-    .fixa {
-      display: block;
-      line-height: 1.5em;
-      padding-left: 12%;
-    }
-    .mini-page {
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .mini-banner,
-    .contato {
-      display: block;
-    }
-    .mini-banner img {
-      width: 100%;
-    }
-    .contato {
-      text-align: left;
-    }
-  
-    .cont-img img {
-      display: block;
-      padding-top: 0.5em;
-      padding-bottom: 1.5em;
-      margin-right: 15em;
-    }
+    
   }
   * {
     max-width: 100%;
